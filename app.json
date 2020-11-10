@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/home/index",
+    "pages/personal/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -9,6 +9,21 @@
     "navigationBarTitleText": "拈花码",
     "navigationBarTextStyle":"white",
     "navigationStyle": "custom"
+  },
+  "usingComponents": {"van-icon": "./vant-weapp/icon/index"},
+  "tabBar": {
+    "custom": true,
+    "color": "#A5BBBE",
+    "selectedColor": "#C5AF84",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index"
+      },
+      {
+        "pagePath": "pages/personal/index"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
