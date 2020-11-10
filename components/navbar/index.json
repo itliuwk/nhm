@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ss-icon": "../icon/index",
+    "van-icon": "../../vant-weapp/icon/index"
+  },
+  "navigationBarTextStyle": "white"
+}

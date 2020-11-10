@@ -1,0 +1,32 @@
+<!--components/navbar/index.wxml-->
+<view class="navbar custom-class" style='height:{{navHeight}}px;background-color:{{bgColor}}'>
+  <!-- navbar-action-group  -->
+  <view wx:if="{{showNav}}" class="navbar-action-wrap row item-center" style='top:{{navTop}}px;background-color:rgba(255,255,255,.6)'>
+      <ss-icon name="back" color="{{iconColor}}" size="15px" block="{{true}}" class="navbar-action_item" bind:click="_navBack"></ss-icon>
+      <ss-icon name="index" color="{{iconColor}}" size="15px" block="{{true}}" class="navbar-action_item last" bind:click="_toIndex"></ss-icon>
+  </view>
+  <view wx:if="{{isHome}}" class="navbar-home" style='top:{{navTop}}px'>
+    <view class="location">
+      <view class="location-ico">
+        <van-icon name="location-o" />
+      </view>
+      <view>
+        <view>
+          <text class="location-name">拈花湾</text>
+          <van-icon class="location-ico" name="arrow" />
+        </view>
+        <view  class="weather">多云 18°</view>  
+      </view>
+    </view>
+    <view class="search">
+      <van-icon class="search-icon" name="search" />
+      <input class="search-input" placeholder-class="search-ph" maxlength="10" placeholder="最美禅意小镇" />
+    </view>
+    <view class="customer-service">
+      <van-icon name="service-o" />
+    </view>
+  </view>
+  <view wx:else class='navbar-title' style='top:{{navTop}}px'>
+    {{pageName}}
+  </view>
+</view>

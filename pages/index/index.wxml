@@ -1,0 +1,41 @@
+<view class='view-page'>
+
+  <navbar page-name="你当前页面的名字" is-home="{{true}}" show-nav='{{false}}'></navbar>
+
+  <view class="home">
+    <view class="nav-list">
+      <view>
+        <view class="nav-list-icon">
+          <van-icon name="hotel-o" size="40px" />
+        </view>
+        <view>电子导览</view>
+      </view>
+      <view>
+        <view class="nav-list-icon">
+          <van-icon name="like-o" size="40px" />
+        </view>
+        <view>停车</view>
+      </view>
+      <view>
+        <view class="nav-list-icon">
+          <van-icon name="newspaper-o" size="40px" />
+        </view>
+        <view>演艺时间</view>
+      </view>
+      <view>
+        <view class="nav-list-icon">
+          <van-icon name="hotel-o" size="40px" />
+        </view>
+        <view>WIFI一键连</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <van-button bindtap="showPopup" type="primary">默认按钮</van-button>
+  <van-popup show="{{ show }}" round='{{show}}' position="bottom" custom-style="height: 50%" bind:close="onClose">
+    <view>xxx</view>
+  </van-popup>
+</view>
