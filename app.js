@@ -4,7 +4,7 @@ App({
     let menuButtonObject = wx.getMenuButtonBoundingClientRect();
     wx.getSystemInfo({
       success: res => {
-        
+        console.log(res)
         //导航高度
         let statusBarHeight = res.statusBarHeight,
           navTop = menuButtonObject.top,

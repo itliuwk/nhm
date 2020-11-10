@@ -34,7 +34,7 @@
 
 
 
-  <van-button bindtap="showPopup" type="primary">默认按钮</van-button>
+  <van-button bindtap="showPopup" type="primary">买票</van-button>
   <van-popup show="{{ show }}" round='{{show}}' position="bottom" custom-style="height: 50%" bind:close="onClose">
     <view>xxx</view>
   </van-popup>
